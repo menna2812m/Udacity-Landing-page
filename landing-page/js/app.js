@@ -13,15 +13,7 @@
  * 
 */
 
-/**
- * Define Global Variables
- * 
-*/
-const sections = document.querySelectorAll("section");
 
-
-/**
- * End Global Variables*/
  
 
 // Add class 'active' to section when near top of viewport
@@ -47,7 +39,7 @@ const  addActiveClass = ()=>{
 
 
 //build nav
-
+const sections = document.querySelectorAll("section");
 sections.forEach( (elm ,index)=>{
 
     const navbarList = document.getElementById('navbar__list');
