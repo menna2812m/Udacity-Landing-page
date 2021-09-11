@@ -2,8 +2,9 @@
 
 ## Table of Contents
 
-* [Description](#description)
 * [Landing_Page_project_info](#landing_page_project_info)
+* [Description](#description)
+
 
 ## Landing Page
 This project is for Udacity's Front End Nanodegree program. HTML and CSS starter code provided by Udacity and i modified javaScript code in app.js file.
