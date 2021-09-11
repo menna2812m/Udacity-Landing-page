@@ -2,12 +2,11 @@
 
 ## Table of Contents
 
-* [Instructions](#instructions)
+* [Description](#description)
 
-## Instructions
+## Landing Page
+This project is for Udacity's Front End Nanodegree program. HTML and CSS starter code provided by Udacity and i modified javaScript code in app.js file.
 
-The starter project has some HTML and CSS styling to display a static version of the Landing Page project. You'll need to convert this project from a static project to an interactive one. This will require modifying the HTML and CSS files, but primarily the JavaScript file.
+## Description
 
-To get started, open `js/app.js` and start building out the app's functionality
-
-For specific, detailed instructions, look at the project instructions in the Udacity Classroom.
+Built dynamic navbar with javascript (createElement .....) and made scrolling active section when we scroll to specific section in the page it will be highlighted with black box
