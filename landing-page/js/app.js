@@ -13,8 +13,13 @@
  * 
 */
 
-
+ /** End Global Variables*/
  
+/**help function** */
+function removeQueryString(url) {
+    return url.split('?')[0]
+}
+
 
 // Add class 'active' to section when near top of viewport
 // Scroll to anchor ID using scrollTO event
@@ -26,6 +31,16 @@ const  addActiveClass = ()=>{
         const sectionTop = sec.getBoundingClientRect().top; 
         if(sectionTop >=0 && sectionTop<= 400){
             sec.classList.add("active-class");
+            [].forEach.call(document.querySelectorAll('li a'), function(elem) {
+                if (removeQueryString(elem.href) === removeQueryString(window.location.href)){
+                    elem.classList.add('Activee')
+                }
+                
+                else{
+                    elem.classList.remove('Activee');
+                }
+               
+            });
         }
         else{
             sec.classList.remove("active-class");
@@ -39,7 +54,9 @@ const  addActiveClass = ()=>{
 
 
 //build nav
+
 const sections = document.querySelectorAll("section");
+
 sections.forEach( (elm ,index)=>{
 
     const navbarList = document.getElementById('navbar__list');
@@ -49,7 +66,6 @@ sections.forEach( (elm ,index)=>{
 
 
 });
-
 
 
 
